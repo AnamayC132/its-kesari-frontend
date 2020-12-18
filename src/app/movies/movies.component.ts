@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../movies/movies.service';
 import { Movie } from '../movies/movie';
+import {MatDialog} from '@angular/material/dialog';
+import {DialogComponent} from '../movies/dialog/dialog.component'
 
 @Component({
   selector: 'app-movies',
@@ -10,11 +12,14 @@ import { Movie } from '../movies/movie';
 export class MoviesComponent implements OnInit {
  movies: Movie[];
 
-  constructor(private movieService : MoviesService) { }
+  constructor(private movieService : MoviesService,public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
- 
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  
+}
 
   getMovies(): void {
     

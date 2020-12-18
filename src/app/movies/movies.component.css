@@ -2,6 +2,15 @@
     max-width: 400px;
   }
   
-  .movie-header-image {
+.movie-header-image {
     background-size: cover;
+}
+.mat-card {
+    background: #fff;
+    color: rgba(0,0,0,.87);
+    background: cornsilk;
+    float: right;
+}
+mat-grid-tile {
+    background: lightblue;
   }

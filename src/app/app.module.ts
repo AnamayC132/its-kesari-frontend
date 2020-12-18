@@ -10,11 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { DialogComponent } from './movies/dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent
+    MoviesComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatCardModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatGridListModule,
   ],
   providers: [MoviesService],
   bootstrap: [AppComponent]
