@@ -2,10 +2,11 @@
     flex: 1 1 auto;
   }
 .mat-toolbar {
-    position: fixed;
+    position: relative;
     background-color: rgba(97, 97, 97, 0.979);
     height: 30px;
     bottom: 0px;
+    margin: 0;
     opacity: 0.8;
   }
 .mat-icon{
