@@ -21,6 +21,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatListModule} from '@angular/material/list';
 import { GamingComponent } from './gaming/gaming.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { GamingComponent } from './gaming/gaming.component';
     DialogComponent,
     ArtGalleryComponent,
     GamingComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
     
   ],
   imports: [
@@ -53,6 +59,6 @@ import { GamingComponent } from './gaming/gaming.component';
     ArtServiceService,
   
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [HomeComponent,AppComponent]
 })
 export class AppModule { }

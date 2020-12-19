@@ -1,0 +1,27 @@
+.home-spacer {
+    flex: 1 1 auto;
+  }
+.mat-toolbar {
+    position: relative;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.979);
+    height: 72px;
+  }
+.mat-icon{
+    color: rgb(255, 255, 255);
+}
+.headertitle{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.mat-button{
+    min-width: 52px;
+    line-height: 67px;
+    padding: 0px 23px;
+    margin-left: -20px;
+}
+.homeicon{
+    margin-left: -8px;
+}

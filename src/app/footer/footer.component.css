@@ -1,0 +1,19 @@
+.home-spacer {
+    flex: 1 1 auto;
+  }
+.mat-toolbar {
+    position: fixed;
+    background-color: rgba(97, 97, 97, 0.979);
+    height: 30px;
+    bottom: 0px;
+  }
+.mat-icon{
+    color: rgb(255, 255, 255);
+}
+.headertitle{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: fasgong;
+}
+
+
