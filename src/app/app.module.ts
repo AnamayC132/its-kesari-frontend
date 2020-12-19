@@ -12,12 +12,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DialogComponent } from './movies/dialog/dialog.component';
+import { ArtGalleryComponent } from './art-gallery/art-gallery.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { ArtServiceService } from '../app/art-gallery/art-service.service';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatListModule} from '@angular/material/list';
+import { GamingComponent } from './gaming/gaming.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
-    DialogComponent
+    DialogComponent,
+    ArtGalleryComponent,
+    GamingComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -28,8 +41,18 @@ import { DialogComponent } from './movies/dialog/dialog.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatGridListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    MatListModule,
   ],
-  providers: [MoviesService],
+  providers: [
+    MoviesService,
+    ArtServiceService,
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

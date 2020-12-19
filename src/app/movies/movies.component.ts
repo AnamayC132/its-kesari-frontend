@@ -11,21 +11,25 @@ import {DialogComponent} from '../movies/dialog/dialog.component'
 })
 export class MoviesComponent implements OnInit {
  movies: Movie[];
-
+ toggle: string="false";
   constructor(private movieService : MoviesService,public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.getMovies();
   }
   openDialog() {
     this.dialog.open(DialogComponent);
   
+}
+flag():void{
+  this.toggle="true"
+
 }
 
   getMovies(): void {
     
     this.movieService.getMovies()
       .subscribe((data:Movie[]) => {
-        console.log(this.movies);
         this.movies = data;
       }
         );

@@ -1,9 +1,8 @@
 <div>
-    <h2>Welcome Gudiya</h2>
-    <button mat-button (click)="openDialog()">Gudiya Click here plzzzz!!!!</button>
-    <button (click)="getMovies()">Get Movie Details</button>
+    <button mat-button (click)="openDialog()">looking for mnovies??</button>
+    <button (click)="flag()">Get Movie Details</button>
+    <div *ngIf="toggle=='true'">
     <mat-grid-list cols="2" rowHeight="2:1" [gutterSize]="'30px'">
-
     <div *ngFor="let movie of movies">
         <mat-grid-tile>
             <mat-card class="movie-card">
@@ -27,8 +26,7 @@
               </mat-card>
             </mat-grid-tile>
         </div>
-        
-            
       </mat-grid-list>
+    </div>
         
 </div>
