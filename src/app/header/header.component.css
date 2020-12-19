@@ -5,7 +5,7 @@
     position: relative;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.979);
-    height: 72px;
+    height: 82px;
   }
 .mat-icon{
     color: rgb(255, 255, 255);
@@ -24,4 +24,17 @@
 }
 .homeicon{
     margin-left: -8px;
+}
+
+.art{
+color: rgb(216, 53, 12);
+}
+.game{
+    color: rgb(15, 12, 216);
+}
+.movie{
+    color: rgb(12, 216, 63);
+}
+.anime{
+    color: rgb(216, 12, 124);
 }
