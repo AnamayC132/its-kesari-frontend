@@ -1,7 +1,25 @@
-
 <div class="container">
-    <app-header></app-header>
-    <div class="content">
-        <router-outlet></router-outlet></div>
-    <app-footer></app-footer>
+  <app-header [currentUrl]="currentUrl"></app-header>
+  <div *ngIf="currentUrl=='/'" class="content">
+
+    <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="68%" *ngFor="let page of pages | keyvalue">
+        <mat-card class=" custom-card mat-elevation-z4" routerLink={{page.value}}
+        routerLinkActive="active">
+          <mat-icon matTooltip="Click to view" [matTooltipPosition]="'above'"  class="customIcon">{{page.key}}</mat-icon>
+          <!-- <a mat-button matTooltip="Click to view" [matTooltipPosition]="'above'" routerLink={{this.currentUrl}}
+    routerLinkActive="active">
+    
+  </a> -->
+        </mat-card>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div *ngIf="currentUrl!='/'" class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </div>

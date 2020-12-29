@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  title:string;
+  year:string;
   constructor() { }
 
   ngOnInit(): void {
+    this.title="Anamay Pandey";
+    this.year="2021";
   }
+  
+
+
 
 }

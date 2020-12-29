@@ -30,7 +30,9 @@
 .homeicon{
     margin-left: -8px;
 }
-
+.home{
+    color:black;
+}
 .art{
 color: rgb(216, 53, 12);
 }

@@ -6,6 +6,7 @@ import { ArtGalleryComponent } from './art-gallery/art-gallery.component';
 import { GamingComponent } from './gaming/gaming.component';
 import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './movies/movies.component';
+import {ProfileComponent} from './profile/profile.component';
 
 const routes: Routes = [
   {path: '',   redirectTo: '/', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'entertainment',component: MoviesComponent},
   {path: 'gaming',component: GamingComponent},
   {path: 'anime',component: AnimeComponent},
+  {path: 'profile',component: ProfileComponent},
 ];
 
 @NgModule({

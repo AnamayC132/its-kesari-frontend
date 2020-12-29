@@ -6,11 +6,59 @@
   }
   .content{
     margin: 0px;
-    height: 82%;
+    height: 100%;
     max-height: 100%;
     max-width: 100%;
     flex-shrink: 1;
     flex-grow: 1;
     padding: 3px 5px;
     overflow-y: auto;
+  }
+ 
+  .art{
+    color: rgb(0, 0, 0);
+    }
+    .game{
+        color: rgb(0, 0, 0);
+    }
+    .movie{
+        color: rgb(0, 0, 0);
+    }
+    .anime{
+        color: rgb(0, 0, 0);
+    }
+   
+  /* .content { 
+    padding: 16px; 
+    
+  } */
+  /* .mat-raised-button{
+    min-width: 588px;
+    line-height: 260px;
+    margin:74px;
+  }
+   */
+   .content { 
+    padding: 16px; 
+   
+  }
+  .card{
+    width: 128%;
+    height: 128%;
+    
+  }
+ .custom-card{
+   background-color: black;
+  opacity: 0.5;
+  border-radius: 90px;
+  cursor: pointer;
+ }
+  .customIcon{
+    font-size: 225px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+    
+    
+     
   }

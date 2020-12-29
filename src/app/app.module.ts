@@ -26,6 +26,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { AnimeComponent } from './anime/anime.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { AnimeComponent } from './anime/anime.component';
     HeaderComponent,
     FooterComponent,
     AnimeComponent,
+    ProfileComponent,
 
   ],
   imports: [
@@ -57,6 +60,7 @@ import { AnimeComponent } from './anime/anime.component';
     FlexLayoutModule,
     MatListModule,
     MatMenuModule,
+    MatTooltipModule
   ],
   providers: [
     MoviesService,
