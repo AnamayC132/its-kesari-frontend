@@ -28,6 +28,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AnimeComponent } from './anime/anime.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ProfileComponent } from './profile/profile.component';
+import {MatRippleModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { ProfileComponent } from './profile/profile.component';
     FlexLayoutModule,
     MatListModule,
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatRippleModule
   ],
   providers: [
     MoviesService,

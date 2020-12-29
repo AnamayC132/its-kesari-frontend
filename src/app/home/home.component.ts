@@ -10,10 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router) { }
   currentUrl: any;
-  // pages:string[]=["brush","live_tv","games","face"];
   pages = new Map<string, string>();
-
-
 
   ngOnInit(): void {
     this.pages.set("brush", "/art"); 

@@ -28,16 +28,7 @@
         color: rgb(0, 0, 0);
     }
    
-  /* .content { 
-    padding: 16px; 
-    
-  } */
-  /* .mat-raised-button{
-    min-width: 588px;
-    line-height: 260px;
-    margin:74px;
-  }
-   */
+
    .content { 
     padding: 16px; 
    
@@ -54,7 +45,7 @@
   cursor: pointer;
  }
   .customIcon{
-    font-size: 225px;
+    font-size: 210px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     

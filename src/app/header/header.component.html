@@ -27,7 +27,7 @@
     </button>
   </mat-menu>
   <div *ngIf="this.currentUrl=='/'">
-    <a mat-button matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/'
+    <a mat-button style="margin:25px;" matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/'
       routerLinkActive="active"><span class="headertitle">AP Archive</span></a>
   </div>
   <div *ngIf="this.currentUrl!='/'">
@@ -35,6 +35,8 @@
       routerLinkActive="active">
       <mat-icon>home</mat-icon>
     </a>&nbsp;&nbsp;&nbsp;
+    <!-- <a  mat-button matTooltip="{{this.pages.get(this.currentUrl).split(':')[1]}}"
+      [matTooltipPosition]="'right'" routerLink={{this.currentUrl}} routerLinkActive="active"><span class="headertitle">{{this.pages.get(this.currentUrl).split(':')[0]}}</span></a> -->
     <a *ngIf="this.currentUrl=='/art'" mat-button matTooltip="Go to art gallery home page"
       [matTooltipPosition]="'right'" routerLink='/art' routerLinkActive="active"><span class="headertitle">Art
         Gallery</span></a>
@@ -48,15 +50,36 @@
     <a *ngIf="this.currentUrl=='/profile'" mat-button matTooltip="Go to profile home page"
       [matTooltipPosition]="'right'" routerLink='/profile' routerLinkActive="active"><span
         class="headertitle">Profile</span></a>
+        <a mat-button style="margin-left: 420px;" matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"
+      routerLinkActive="active">
+      <span class="headertitle">AP Archive</span>
+    </a>
   </div>
   <span class="home-spacer"></span>
-
-  <!-- <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"
+  <div fxShow="true" fxHide.lt-md="true">
+  <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"
     routerLinkActive="active">
     <mat-icon>home</mat-icon>
-  </a> -->
+  </a>
+  <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/art"
+    routerLinkActive="active">
+    <mat-icon>brush</mat-icon>
+  </a>
+  <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/entertainment"
+    routerLinkActive="active">
+    <mat-icon>live_tv</mat-icon>
+  </a>
+  <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/anime"
+    routerLinkActive="active">
+    <mat-icon>face</mat-icon>
+  </a>
+  <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/gaming"
+    routerLinkActive="active">
+    <mat-icon>games</mat-icon>
+  </a>
   <a mat-button matTooltip="Admin's profile" [matTooltipPosition]="'above'" routerLink="/profile"
     routerLinkActive="active">
     <mat-icon>account_box</mat-icon>
   </a>
+  </div>
 </mat-toolbar>
