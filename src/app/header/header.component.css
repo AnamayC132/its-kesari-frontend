@@ -15,6 +15,11 @@
     font-size: 30px;
     font-family: fantasy;
 }
+.headertitle.page{
+    color: rgb(43, 121, 223);
+    font-size: 30px;
+    font-family: fantasy;
+}
 .mat-icon-button {
     width: 70px;
     height: 80px;

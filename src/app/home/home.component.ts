@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) { }
   currentUrl: any;
   pages = new Map<string, string>();
-
+  baseUrl:string="assets/home/";
   ngOnInit(): void {
     this.pages.set("brush", "/art"); 
     this.pages.set("games", "/gaming");
