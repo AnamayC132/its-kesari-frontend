@@ -29,6 +29,8 @@ import { AnimeComponent } from './anime/anime.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ProfileComponent } from './profile/profile.component';
 import {MatRippleModule} from '@angular/material/core';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -62,7 +64,10 @@ import {MatRippleModule} from '@angular/material/core';
     MatListModule,
     MatMenuModule,
     MatTooltipModule,
-    MatRippleModule
+    MatRippleModule,
+    MatExpansionModule,
+    MatFormFieldModule
+    
   ],
   providers: [
     MoviesService,
