@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   baseUrl:string="assets/home/";
   ngOnInit(): void {
     this.pages.set("brush", "/art"); 
-    this.pages.set("games", "/gaming");
     this.pages.set("live_tv", "/entertainment");
+    this.pages.set("games", "/gaming");
     this.pages.set("face", "/anime");
     this.router.events.subscribe((event: Event) => {
 

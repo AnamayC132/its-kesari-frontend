@@ -5,13 +5,13 @@
     flex-direction: column;
   }
   .content{
-    margin: 0px;
+    margin: 0px 0px 0px 15px;
     height: 100%;
     max-height: 100%;
     max-width: 100%;
     flex-shrink: 1;
     flex-grow: 1;
-    padding: 3px 5px;
+    /* padding: 3px 5px; */
     overflow-y: auto;
   }
  
@@ -29,27 +29,37 @@
     }
    
 
-   .content { 
-    padding: 16px; 
-   
-  }
-  .card{
-    width: 128%;
-    height: 128%;
-    
-  }
- .custom-card{
+    .mat-card {
+        
+        
+        
+    }
+ .custom-card :active{
    background-color: black;
-  /* opacity: 0.5; */
-  border-radius: 90px;
-  cursor: pointer;
+   padding: 16px -1px;
+  
+  
+  pointer-events: none;
  }
+ .custom-card :hover{
+  background-color: black;
+  padding: 16px -1px;
+ cursor: pointer;
+ 
+}
   .customIcon{
     /* font-size: 210px; */
     color: rgb(255, 255, 255);
     /* cursor: pointer; */
-    
-    
-    
      
   }
+
+  .rippleHover:hover .mat-card-image{
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  .mat-card-image{
+    margin-bottom: -21px;
+    transition: .8s ease;
+  }
+ 
