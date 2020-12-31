@@ -34,6 +34,10 @@
   padding: 16px -1px;
  cursor: pointer;
  user-select: none;
+ background: url('src/assets/home/anime.jpg');
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
  
 }
   .customIcon{
