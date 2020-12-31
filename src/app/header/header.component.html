@@ -1,10 +1,10 @@
 <mat-toolbar class="mat-elevation-z4">
-<div class="rippleHover"> 
-  <button mat-icon-button matTooltip="Click to get Menu panel" [matTooltipPosition]="'above'"
-    [matMenuTriggerFor]="menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-</div>
+  <div class="rippleHover">
+    <button mat-icon-button matTooltip="Click to get Menu panel" [matTooltipPosition]="'above'"
+      [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
   <mat-menu #menu="matMenu">
     <button routerLink="/" routerLinkActive="active" mat-menu-item>
       <mat-icon class="home">home</mat-icon>
@@ -93,7 +93,8 @@
   <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl=='/'">
       <a mat-button style="transform: translateX(-91px);" matTooltip="App home page" [matTooltipPosition]="'right'"
-        routerLink='/' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">AP Archive</span></a>
+        routerLink='/' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">AP
+          Archive</span></a>
     </div>
   </div>
   <div fxShow="false" fxHide.lt-md="false">
@@ -122,10 +123,18 @@
   </div>
 
   <div fxShow="false" fxHide.lt-md="false">
-    <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"
-      routerLinkActive="active">
-      <mat-icon>home</mat-icon>
-    </a>
+    <div *ngIf="this.currentUrl=='/'">
+      <a mat-button matTooltip="Admin's profile" [matTooltipPosition]="'above'" routerLink="/profile"
+        routerLinkActive="active">
+        <mat-icon>account_box</mat-icon>
+      </a>
+    </div>
+    <div *ngIf="this.currentUrl!='/'">
+      <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"
+        routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+      </a>
+    </div>
 
   </div>
 
