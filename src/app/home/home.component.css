@@ -32,6 +32,7 @@
   background-color: black;
   padding: 16px -1px;
  cursor: pointer;
+ user-select: none;
  
 }
   .customIcon{
@@ -49,7 +50,7 @@
     margin-bottom: -21px;
     transition: .8s ease;
   }
-  .example-ripple-container {
+  /* .example-ripple-container {
     cursor: pointer;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -70,4 +71,4 @@
   
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
-  }
+  } */
