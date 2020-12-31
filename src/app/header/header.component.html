@@ -33,12 +33,12 @@
   </mat-menu>
 
 
-  <div class="rippleHover" fxShow="true" fxHide.lt-sm="true">
+  <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
     <a mat-button style="margin:25px;" matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/'
       routerLinkActive="active"><span class="headertitle">AP Archive</span></a>
 
   </div>
-  <div fxShow="true" fxHide.lt-sm="true">
+  <div fxShow="true" fxHide.lt-md="true">
     <div class="rippleHover" *ngIf="this.currentUrl!='/'">
 
       <a *ngIf="this.currentUrl=='/art'" mat-button style="transform: translateX(420px);"
@@ -90,7 +90,7 @@
       <mat-icon>account_box</mat-icon>
     </a>
   </div>
-  <div fxShow="false" fxHide.lt-sm="false">
+  <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl=='/'">
       <a mat-button style="transform: translateX(-91px);" matTooltip="App home page" [matTooltipPosition]="'right'"
         routerLink='/' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">AP Archive</span></a>
