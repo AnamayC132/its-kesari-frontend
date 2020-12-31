@@ -27,21 +27,8 @@
     .anime{
         color: rgb(0, 0, 0);
     }
-   
 
-    .mat-card {
-        
-        
-        
-    }
- .custom-card :active{
-   background-color: black;
-   padding: 16px -1px;
-  
-  
-  pointer-events: none;
- }
- .custom-card :hover{
+ .custom-card{
   background-color: black;
   padding: 16px -1px;
  cursor: pointer;
