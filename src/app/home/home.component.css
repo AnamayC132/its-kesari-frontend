@@ -5,13 +5,10 @@
     flex-direction: column;
   }
   .content{
-    /* margin: 0px 0px 0px 15px;
     height: 100%;
-    max-height: 100%;
-    max-width: 100%;
     flex-shrink: 1;
     flex-grow: 1;
-     */
+    
     overflow-y: auto;
   }
  
