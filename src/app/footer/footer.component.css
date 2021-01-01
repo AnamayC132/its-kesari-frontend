@@ -2,7 +2,7 @@
     flex: 1 1 auto;
   }
 .mat-toolbar {
-    position: relative;
+    position: absolute;
     background-color: rgba(97, 97, 97, 0.979);
     height: 30px;
     bottom: 0px;
