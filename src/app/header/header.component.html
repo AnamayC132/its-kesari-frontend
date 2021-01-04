@@ -41,9 +41,10 @@
   <div fxShow="true" fxHide.lt-md="true">
     <div class="rippleHover" *ngIf="this.currentUrl!='/'">
 
-      <a *ngIf="this.currentUrl=='/art'" mat-button style="transform: translateX(420px);"
-        matTooltip="Go to art gallery home page" [matTooltipPosition]="'right'" routerLink='/art'
-        routerLinkActive="active"><span class="headertitle page">Art
+      <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
+      this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'"
+        mat-button style="transform: translateX(420px);" matTooltip="Go to art gallery home page"
+        [matTooltipPosition]="'right'" routerLink='/art' routerLinkActive="active"><span class="headertitle page">Art
           Gallery</span></a>
       <a *ngIf="this.currentUrl=='/entertainment'" mat-button style="transform: translateX(420px);"
         matTooltip="Go to movies home page" [matTooltipPosition]="'right'" routerLink='/entertainment'
@@ -100,7 +101,8 @@
   <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl!='/'">
 
-      <a *ngIf="this.currentUrl=='/art'" mat-button style="transform: translateX(-91px);"
+      <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
+      this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'" mat-button style="transform: translateX(-91px);"
         matTooltip="Go to art gallery home page" [matTooltipPosition]="'right'" routerLink='/art'
         routerLinkActive="active"><span class="mobile_header">Art
           Gallery</span></a>

@@ -31,6 +31,7 @@ import { ProfileComponent } from './profile/profile.component';
 import {MatRippleModule} from '@angular/material/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ArtCategoryComponent } from './art-gallery/art-category/art-category.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FooterComponent,
     AnimeComponent,
     ProfileComponent,
+    ArtCategoryComponent,
 
   ],
   imports: [
