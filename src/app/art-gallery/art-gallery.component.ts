@@ -10,18 +10,18 @@ export class ArtGalleryComponent implements OnInit {
 
   currentUrl: any;
   pages = new Map<string, string>();
-  carUrl:string="assets/car/";
-  constructor( private router: Router) { }
 
-  
+  constructor(private router: Router) { }
+
+
   ngOnInit(): void {
-    this.pages.set("Automobile", "directions_car"); 
+    this.pages.set("Automobile", "directions_car");
     this.pages.set("Caricatures", "sentiment_satisfied_alt");
     this.pages.set("Doodles", "adb");
     this.pages.set("Portraits", "face");
     this.pages.set("Posters", "movie");
     this.pages.set("Abstract", "extension");
-  
+
     this.router.events.subscribe((event: Event) => {
 
       if (event instanceof NavigationEnd) {

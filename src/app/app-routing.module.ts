@@ -10,20 +10,18 @@ import { ArtCategoryComponent } from './art-gallery/art-category/art-category.co
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   {
-    path: 'art', component: ArtGalleryComponent, children: [
-      { path: 'automobile', component: ArtCategoryComponent },
-      { path: 'caricatures', component: ArtCategoryComponent },
-      { path: 'doodles', component: ArtCategoryComponent },
-      { path: 'abstract', component: ArtCategoryComponent },
-      { path: 'posters', component: ArtCategoryComponent },
-      { path: 'portraits', component: ArtCategoryComponent },
-    ]
+    path: 'art', component: ArtGalleryComponent
   },
   { path: 'entertainment', component: MoviesComponent },
   { path: 'gaming', component: GamingComponent },
   { path: 'anime', component: AnimeComponent },
   { path: 'profile', component: ProfileComponent },
-
+  { path: 'art/automobile', component: ArtCategoryComponent },
+  { path: 'art/caricatures', component: ArtCategoryComponent },
+  { path: 'art/doodles', component: ArtCategoryComponent },
+  { path: 'art/abstract', component: ArtCategoryComponent },
+  { path: 'art/posters', component: ArtCategoryComponent },
+  { path: 'art/portraits', component: ArtCategoryComponent },
 
 ];
 

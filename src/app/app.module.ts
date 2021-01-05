@@ -32,6 +32,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ArtCategoryComponent } from './art-gallery/art-category/art-category.component';
+import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-dialog.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ArtCategoryComponent } from './art-gallery/art-category/art-category.co
     AnimeComponent,
     ProfileComponent,
     ArtCategoryComponent,
+    ArtDialogComponent,
 
   ],
   imports: [
