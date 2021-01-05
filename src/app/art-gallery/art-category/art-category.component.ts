@@ -36,7 +36,7 @@ url:string;
     "assets/portraits/ssr.jpg", "assets/portraits/tr1.jpg", "assets/portraits/tr2.jpg", "assets/portraits/um1.jpg",
     "assets/portraits/um2.jpg", "assets/portraits/um3.jpg"]
   postersUrl: string[] = ["assets/posters/go1.jpg", "assets/posters/go2.jpg", "assets/posters/go3.jpg",
-    "assets/posters/ra1.jpg", "assets/posters/ra2.jpg"]
+    "assets/posters/ra1.jpg", "assets/posters/raees.jpg"]
   abstractUrl: string[] = ["assets/random/juari.jpg", "assets/random/love.jpg", "assets/random/ma1.jpg",
     "assets/random/ma2.jpg", "assets/random/pa1.jpg", "assets/random/tower.jpg"]
 
