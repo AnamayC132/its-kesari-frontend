@@ -33,7 +33,7 @@ url:string;
     "assets/portraits/dt3.jpg", "assets/portraits/dt4.jpg", "assets/portraits/dt5.jpg", "assets/portraits/hr1.jpg",
     "assets/portraits/hr2.jpg", "assets/portraits/ks.jpg", "assets/portraits/ni3.jpg", "assets/portraits/pa1.jpg",
     "assets/portraits/pa2.jpg", "assets/portraits/pa3.jpg", "assets/portraits/pa4.jpg", "assets/portraits/sj1.jpg",
-    "assets/portraits/ssr.jpg", "assets/portraits/tr1.jpg", "assets/portraits/tr2.jpg", "assets/portraits/um1.jpg",
+    "assets/portraits/sredited.jpg", "assets/portraits/tr1.jpg", "assets/portraits/tr2.jpg", "assets/portraits/um1.jpg",
     "assets/portraits/um2.jpg", "assets/portraits/um3.jpg"]
   postersUrl: string[] = ["assets/posters/go1.jpg", "assets/posters/go2.jpg", "assets/posters/go3.jpg",
     "assets/posters/ra1.jpg", "assets/posters/raees.jpg"]
