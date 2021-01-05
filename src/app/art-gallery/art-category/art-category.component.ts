@@ -28,7 +28,8 @@ url:string;
   caricaturesUrl: string[] = ["assets/caricatures/pup.jpg", "assets/caricatures/vote.jpg"]
   doodlesUrl: string[] = ["assets/doodles/do1.jpg", "assets/doodles/do2.jpg", "assets/doodles/do3.jpg"]
 
-  portraitsUrl: string[] = ["assets/portraits/an1.jpg", "assets/portraits/dt1.jpg", "assets/portraits/dt2.jpg",
+  portraitsUrl: string[] = ["assets/portraits/colorGirl.jpg","assets/portraits/colorGirl1.jpg",
+  "assets/portraits/colorGirl2.jpg","assets/portraits/an1.jpg", "assets/portraits/dt1.jpg", "assets/portraits/dt2.jpg",
     "assets/portraits/dt3.jpg", "assets/portraits/dt4.jpg", "assets/portraits/dt5.jpg", "assets/portraits/hr1.jpg",
     "assets/portraits/hr2.jpg", "assets/portraits/ks.jpg", "assets/portraits/ni3.jpg", "assets/portraits/pa1.jpg",
     "assets/portraits/pa2.jpg", "assets/portraits/pa3.jpg", "assets/portraits/pa4.jpg", "assets/portraits/sj1.jpg",
