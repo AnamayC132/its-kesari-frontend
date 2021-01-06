@@ -35,6 +35,7 @@ import { ArtCategoryComponent } from './art-gallery/art-category/art-category.co
 import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-dialog.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +50,7 @@ import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-di
     ProfileComponent,
     ArtCategoryComponent,
     ArtDialogComponent,
+    
 
   ],
   imports: [
