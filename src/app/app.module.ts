@@ -33,6 +33,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ArtCategoryComponent } from './art-gallery/art-category/art-category.component';
 import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-dialog.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -72,7 +73,8 @@ import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-di
     MatTooltipModule,
     MatRippleModule,
     MatExpansionModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatChipsModule
     
   ],
   providers: [
