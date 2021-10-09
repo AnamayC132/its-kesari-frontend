@@ -11,15 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs'
-import { ArtGalleryComponent } from './art-gallery/art-gallery.component';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { ArtServiceService } from '../app/art-gallery/art-service.service';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
-import { GamingComponent } from './gaming/gaming.component';
+
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -30,22 +30,22 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatRippleModule} from '@angular/material/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { ArtCategoryComponent } from './art-gallery/art-category/art-category.component';
-import { ArtDialogComponent } from './art-gallery/art-category/art-dialog/art-dialog.component';
+;
 import {MatChipsModule} from '@angular/material/chips';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArtGalleryComponent,
-    GamingComponent,
+    ProductDetailsComponent,
+    ConsumerBenefitsComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ArtCategoryComponent,
-    ArtDialogComponent,
+   
     
 
   ],
@@ -75,7 +75,7 @@ import {MatChipsModule} from '@angular/material/chips';
   ],
   providers: [
   
-    ArtServiceService,
+    
 
   ],
   bootstrap: [AppComponent]

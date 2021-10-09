@@ -3,10 +3,10 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-art-gallery',
-  templateUrl: './art-gallery.component.html',
-  styleUrls: ['./art-gallery.component.css']
+  templateUrl: './product-details.component.html',
+  styleUrls: ['./product-details.component.css']
 })
-export class ArtGalleryComponent implements OnInit {
+export class ProductDetailsComponent implements OnInit {
 
   currentUrl: any;
   pages = new Map<string, string>();

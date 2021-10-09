@@ -3,10 +3,10 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-gaming',
-  templateUrl: './gaming.component.html',
-  styleUrls: ['./gaming.component.css']
+  templateUrl: './consumer-benefits.component.html',
+  styleUrls: ['./consumer-benefits.component.css']
 })
-export class GamingComponent implements OnInit {
+export class ConsumerBenefitsComponent implements OnInit {
   currentUrl: any;
   pages = new Map<string, string>();
 

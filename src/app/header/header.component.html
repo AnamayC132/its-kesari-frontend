@@ -10,12 +10,12 @@
       <mat-icon class="home">home</mat-icon>
       <span>Home</span>
     </button>
-    <button routerLink="/art" routerLinkActive="active" mat-menu-item>
+    <button routerLink="/brand" routerLinkActive="active" mat-menu-item>
       <mat-icon class="art">featured_play_list</mat-icon>
       <span>Product Details</span>
     </button>
    
-    <button routerLink="/gaming" routerLinkActive="active" mat-menu-item>
+    <button routerLink="/baby1" routerLinkActive="active" mat-menu-item>
       <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
       <span>consumer Benefits</span>
     </button>
@@ -31,13 +31,12 @@
   <div fxShow="true" fxHide.lt-md="true">
     <div class="rippleHover" *ngIf="this.currentUrl!='/'">
 
-      <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
-      this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'"
-        mat-button style="transform: translateX(420px);" matTooltip="Go to art gallery home page"
-        [matTooltipPosition]="'right'" routerLink='/art' routerLinkActive="active"><span class="headertitle page">Product Details</span></a>
+      <a *ngIf="this.currentUrl=='/brand'"
+        mat-button style="transform: translateX(420px);" matTooltip="Go to product details page"
+        [matTooltipPosition]="'right'" routerLink='/brand' routerLinkActive="active"><span class="headertitle page">Product Details</span></a>
     
-      <a *ngIf="this.currentUrl=='/gaming'" mat-button style="transform: translateX(420px);"
-        matTooltip="Go to gaming home page" [matTooltipPosition]="'right'" routerLink='/gaming'
+      <a *ngIf="this.currentUrl=='/baby1'" mat-button style="transform: translateX(420px);"
+        matTooltip="Go consumer benefits page" [matTooltipPosition]="'right'" routerLink='/baby1'
         routerLinkActive="active"><span class="headertitle page">Consumer Benefits</span></a>
     
 
@@ -51,13 +50,13 @@
       routerLinkActive="active">
       <mat-icon>home</mat-icon>
     </a>
-    <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/art"
+    <a mat-button matTooltip="Go to product details page" [matTooltipPosition]="'above'" routerLink="/brand"
       routerLinkActive="active">
       <mat-icon>featured_play_list</mat-icon>
     </a>
     
     
-    <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/gaming"
+    <a mat-button matTooltip="Go to consumer benefits page" [matTooltipPosition]="'above'" routerLink="/baby1"
       routerLinkActive="active">
       <mat-icon>sentiment_satisfied_alt</mat-icon>
     </a>
@@ -72,13 +71,12 @@
   <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl!='/'">
 
-      <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
-      this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'" mat-button style="transform: translateX(-91px);"
-        matTooltip="Go to art gallery home page" [matTooltipPosition]="'right'" routerLink='/art'
+      <a *ngIf="this.currentUrl=='/brand'" mat-button style="transform: translateX(-91px);"
+        matTooltip="Go to product details page" [matTooltipPosition]="'right'" routerLink='/brand'
         routerLinkActive="active"><span class="mobile_header">Product Details</span></a>
      
-      <a *ngIf="this.currentUrl=='/gaming'" mat-button style="transform: translateX(-91px);"
-        matTooltip="Go to gaming home page" [matTooltipPosition]="'right'" routerLink='/gaming'
+      <a *ngIf="this.currentUrl=='/baby1'" mat-button style="transform: translateX(-91px);"
+        matTooltip="Go to consumer benefits page" [matTooltipPosition]="'right'" routerLink='/baby1'
         routerLinkActive="active"><span class="mobile_header">Consumer Benefits</span></a>
      
 

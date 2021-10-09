@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArtCategoryComponent } from './art-category.component';
+import { ConsumerBenefitsComponent } from './consumer-benefits.component';
 
-describe('ArtCategoryComponent', () => {
-  let component: ArtCategoryComponent;
-  let fixture: ComponentFixture<ArtCategoryComponent>;
+describe('GamingComponent', () => {
+  let component: ConsumerBenefitsComponent;
+  let fixture: ComponentFixture<ConsumerBenefitsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArtCategoryComponent ]
+      declarations: [ ConsumerBenefitsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArtCategoryComponent);
+    fixture = TestBed.createComponent(ConsumerBenefitsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

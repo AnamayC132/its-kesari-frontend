@@ -1,26 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ArtGalleryComponent } from './art-gallery/art-gallery.component';
-import { GamingComponent } from './gaming/gaming.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits.component';
 
-
-import { ArtCategoryComponent } from './art-gallery/art-category/art-category.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   {
-    path: 'brand', component: ArtGalleryComponent
+    path: 'brand', component: ProductDetailsComponent
   },
  
-  { path: 'baby1', component: GamingComponent },
+  { path: 'baby1', component: ConsumerBenefitsComponent },
 
-  // { path: 'art/automobile', component: ArtCategoryComponent },
-  // { path: 'art/caricatures', component: ArtCategoryComponent },
-  // { path: 'art/doodles', component: ArtCategoryComponent },
-  // { path: 'art/abstract', component: ArtCategoryComponent },
-  // { path: 'art/posters', component: ArtCategoryComponent },
-  // { path: 'art/portraits', component: ArtCategoryComponent },
 
 ];
 
