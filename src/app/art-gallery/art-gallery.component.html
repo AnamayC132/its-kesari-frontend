@@ -2,115 +2,189 @@
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Admin/Owner Details
+        <h2>Product Details</h2>
       </mat-panel-title>
       <mat-panel-description>
-        
-        <mat-icon>account_circle</mat-icon>
+
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <mat-card class="example-card mat-elevation-z4" >
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Anamay Pandey</mat-card-title>
-        <mat-card-subtitle>Artist | Software Engineer | E-Gamer | Fitness Enthusiast</mat-card-subtitle>
-      </mat-card-header>
-      
-      <mat-card-content>
-       <mat-card  class="custom-card mat-elevation-z4">
-        <mat-card-title>Social media handles</mat-card-title>
-        <mat-card-subtitle>Connect to explore!!!</mat-card-subtitle>
-      <a href="https://www.youtube.com/channel/UC9AxL4sncC1R4O8SysVdK8Q" class="fa fa-youtube"></a>
-      <a href="https://www.facebook.com/ARTarchives1/" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/anamay_pandey11" class="fa fa-instagram"></a>
-       </mat-card>
-         
-      </mat-card-content>
-      <mat-card-actions>
-      </mat-card-actions>
-    </mat-card>
+
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="General Details">
+        <mat-card class="example-card mat-elevation-z4">
+          <mat-card-header>
+            
+            <mat-card-title>Category</mat-card-title>
+            
+          </mat-card-header>
     
-      
+          <mat-card-content>
+            <mat-card class="custom-card mat-elevation-z4">
+              <mat-card-title>Baby Food</mat-card-title>
+            
+              
+            </mat-card></mat-card-content></mat-card>
+            <mat-card class="example-card mat-elevation-z4">
+              <mat-card-header>
+                
+                <mat-card-title>Constituents</mat-card-title>
+                
+              </mat-card-header>
+        
+              <mat-card-content>
+                <mat-card class="custom-card mat-elevation-z4">
+                  <mat-card-title>Organic Ragi, Rice and Moong Dal</mat-card-title>
+                
+                  
+                </mat-card></mat-card-content></mat-card>
+                <mat-card class="example-card mat-elevation-z4">
+                  <mat-card-header>
+                    
+                    <mat-card-title>Product Form</mat-card-title>
+                    
+                  </mat-card-header>
+            
+                  <mat-card-content>
+                    <mat-card class="custom-card mat-elevation-z4">
+                      <mat-card-title>Porridge</mat-card-title>
+                    
+                      
+                    </mat-card></mat-card-content></mat-card></mat-tab>
+      <mat-tab label="Characteristics">
+        <mat-card class="example-card mat-elevation-z4">
+          <mat-card-header>
+            
+         
+            
+          </mat-card-header>
+    
+          <mat-card-content>
+            <mat-card class="custom-card mat-elevation-z4">
+              <mat-card-title>Organic content</mat-card-title>
+            
+              
+            </mat-card></mat-card-content></mat-card>
+            <mat-card class="example-card mat-elevation-z4">
+              <mat-card-header>
+                
+              
+                
+              </mat-card-header>
+        
+              <mat-card-content>
+                <mat-card class="custom-card mat-elevation-z4">
+                  <mat-card-title>Rich in dietary fiber and sodium</mat-card-title>
+                
+                  
+                </mat-card></mat-card-content></mat-card>
+                <mat-card class="example-card mat-elevation-z4">
+                  <mat-card-header>
+                    
+                  
+                    
+                  </mat-card-header>
+            
+                  <mat-card-content>
+                    <mat-card class="custom-card mat-elevation-z4">
+                      <mat-card-title>Rich in protein, calcium and iron</mat-card-title>
+                    
+                      
+                    </mat-card></mat-card-content></mat-card>
+                    <mat-card class="example-card mat-elevation-z4">
+                      <mat-card-header>
+                        
+                      
+                        
+                      </mat-card-header>
+                
+                      <mat-card-content>
+                        <mat-card class="custom-card mat-elevation-z4">
+                          <mat-card-title>No added salt or sugar, preservatives and artificial flavors</mat-card-title>
+                        
+                          
+                        </mat-card></mat-card-content></mat-card>
+                        <mat-card class="example-card mat-elevation-z4">
+                          <mat-card-header>
+                            
+                          
+                            
+                          </mat-card-header>
+                    
+                          <mat-card-content>
+                            <mat-card class="custom-card mat-elevation-z4">
+                              <mat-card-title>Rich in Vitamin A, B, C and E</mat-card-title>
+                            
+                              
+                            </mat-card></mat-card-content></mat-card></mat-tab>
+
+    </mat-tab-group>
+    
+
+
+
     <mat-action-row>
       <button mat-button class="custombutton" (click)="nextStep()">Next</button>
     </mat-action-row>
   </mat-expansion-panel>
-  <mat-expansion-panel [expanded]="step ===1" (opened)="setStep(1)" hideToggle>
+  
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Admin/Owner Details
+        <h2>Prototypes</h2>
       </mat-panel-title>
       <mat-panel-description>
-        
-        <mat-icon>account_circle</mat-icon>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <mat-card class="example-card mat-elevation-z4" >
+    <div fxLayout="row wrap">
+      <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%">
+    <mat-card class="example-card mat-elevation-z4">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Anamay Pandey</mat-card-title>
-        <mat-card-subtitle>Artist | Software Engineer | E-Gamer | Fitness Enthusiast</mat-card-subtitle>
+       
+        
+            <mat-card-title>Prototype 1</mat-card-title>
+       
       </mat-card-header>
-      
+
       <mat-card-content>
-       <mat-card  class="custom-card mat-elevation-z4">
-        <mat-card-title>Social media handles</mat-card-title>
-        <mat-card-subtitle>Connect to explore!!!</mat-card-subtitle>
-      <a href="https://www.youtube.com/channel/UC9AxL4sncC1R4O8SysVdK8Q" class="fa fa-youtube"></a>
-      <a href="https://www.facebook.com/ARTarchives1/" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/anamay_pandey11" class="fa fa-instagram"></a>
-       </mat-card>
-         
-      </mat-card-content>
+
+
+
+        <mat-card class="custom-card mat-elevation-z4">
+
+          <img mat-card-image src="/assets/p1.png">
+        </mat-card>
+</mat-card-content></mat-card>
+      </div>
+      <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%">
+        <mat-card class="example-card mat-elevation-z4">
+          <mat-card-header>
+            
+            
+                <mat-card-title>Prototype 2</mat-card-title>
+          </mat-card-header>
+    
+          <mat-card-content>
+    
+    
+    
+            <mat-card class="custom-card mat-elevation-z4">
+              <img mat-card-image src="/assets/p2.png">
+            </mat-card>
+    </mat-card-content>
+          
+
       <mat-card-actions>
       </mat-card-actions>
     </mat-card>
-    
-      
-    <mat-action-row>
-      <button mat-button class="custombutton" (click)="prevStep()">Previous</button>
-      <button mat-button class="custombutton" (click)="nextStep()">Next</button>
-    </mat-action-row>
-  </mat-expansion-panel>
-  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Admin/Owner Details
-      </mat-panel-title>
-      <mat-panel-description>
-        
-        <mat-icon>account_circle</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-card class="example-card mat-elevation-z4" >
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Anamay Pandey</mat-card-title>
-        <mat-card-subtitle>Artist | Software Engineer | E-Gamer | Fitness Enthusiast</mat-card-subtitle>
-      </mat-card-header>
-      
-      <mat-card-content>
-       <mat-card  class="custom-card mat-elevation-z4">
-        <mat-card-title>Social media handles</mat-card-title>
-        <mat-card-subtitle>Connect to explore!!!</mat-card-subtitle>
-      <a href="https://www.youtube.com/channel/UC9AxL4sncC1R4O8SysVdK8Q" class="fa fa-youtube"></a>
-      <a href="https://www.facebook.com/ARTarchives1/" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/anamay_pandey11" class="fa fa-instagram"></a>
-       </mat-card>
-         
-      </mat-card-content>
-      <mat-card-actions>
-      </mat-card-actions>
-    </mat-card>
-    
-      
+  </div></div>
+
     <mat-action-row>
       <button mat-button class="custombutton" (click)="prevStep()">Previous</button>
       <button mat-button class="custombutton" (click)="nextStep()">Collapse</button>
     </mat-action-row>
   </mat-expansion-panel>
-  
- 
 
-  
+
+
+
 </mat-accordion>

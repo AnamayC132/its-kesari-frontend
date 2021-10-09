@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import {MatTabsModule} from '@angular/material/tabs'
 import { ArtGalleryComponent } from './art-gallery/art-gallery.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -55,6 +55,7 @@ import {MatChipsModule} from '@angular/material/chips';
     HttpClientModule,
     FormsModule,
     MatCardModule,
+    MatTabsModule,
     BrowserAnimationsModule,
     MatDialogModule,
     MatGridListModule,
