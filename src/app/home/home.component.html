@@ -12,14 +12,10 @@
         </div>
       
         </mat-card>
-        <mat-card *ngIf="page.key=='b'"  class=" custom-card2 mat-elevation-z4" routerLink={{page.value}} routerLinkActive="active" matRipple
-        [matRippleCentered]="true" [matRippleDisabled]="false" [matRippleUnbounded]="false" [matRippleRadius]="300">
+        <mat-card *ngIf="page.key=='b'"  class=" custom-card2 mat-elevation-z4" routerLink={{page.value}} routerLinkActive="active" >
         
           
-          <!-- <mat-card-title><br><br><span class="headertitle">Early Life Nutrition</span><br><br><span class="headertitle">Local,Organic, Wholesome, Fresh</span><br><br><span class="headertitle">Because your baby deserves only the finest</span>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-         
-          </mat-card-title> --><div class="rippleHover">
+         <div class="rippleHover">
           <img mat-card-image src="{{this.baseUrl+page.value.substring(1)}}.jpg">
         </div>
         
