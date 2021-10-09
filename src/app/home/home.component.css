@@ -34,12 +34,12 @@
  
 }
 .custom-card2{
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   padding: 16px -1px;
  cursor: pointer;
  user-select: none;
  opacity: 0.2;
- color: black;
+
 }
 .custom-card3{
   background-color: black;
