@@ -34,12 +34,12 @@
  
 }
 .custom-card2{
-  background-color: black;
+  background: rgb(255, 255, 255);
   padding: 16px -1px;
  cursor: pointer;
  user-select: none;
- opacity: 0;
- 
+ opacity: 0.2;
+ color: black;
 }
 .custom-card3{
   background-color: black;
@@ -64,3 +64,8 @@
     margin-bottom: -21px;
     transition: .8s ease;
   }
+  .headertitle{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: fantasy;
+}

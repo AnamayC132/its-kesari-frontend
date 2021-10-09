@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   pages = new Map<string, string>();
   baseUrl:string="assets/home/";
   ngOnInit(): void {
-    this.pages.set("b", "/brand1"); 
+    this.pages.set("b", "/card1"); 
     // this.pages.set("live_tv", "/entertainment");
     this.pages.set("baby", "/baby1");
     this.pages.set("b1", "/brand");
