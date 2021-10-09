@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-gaming',
@@ -7,23 +7,38 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
   styleUrls: ['./gaming.component.css']
 })
 export class GamingComponent implements OnInit {
-  isMobilePortrait:any
-  isMobileLandscape=true;
-  constructor( breakpointObserver: BreakpointObserver) { 
-    breakpointObserver.observe([
-      Breakpoints.HandsetPortrait
-    ]).subscribe(result => {
-      this.isMobilePortrait = result.matches;
-    });
-    breakpointObserver.observe([
-      Breakpoints.HandsetLandscape
-    ]).subscribe(result => {
-      this.isMobileLandscape = result.matches;
-    });
+  currentUrl: any;
+  pages = new Map<string, string>();
+
+  constructor(private router: Router) { }
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
   }
-  urls = new Map<string, string>();
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
+
   ngOnInit(): void {
-    
+    // this.pages.set("Automobile", "directions_car");
+    // this.pages.set("Caricatures", "sentiment_satisfied_alt");
+    // this.pages.set("Doodles", "adb");
+    // this.pages.set("Portraits", "face");
+    // this.pages.set("Posters", "movie");
+    // this.pages.set("Abstract", "extension");
+
+    this.router.events.subscribe((event: Event) => {
+
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
+      }
+    });
   }
 
 }

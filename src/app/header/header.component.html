@@ -11,31 +11,21 @@
       <span>Home</span>
     </button>
     <button routerLink="/art" routerLinkActive="active" mat-menu-item>
-      <mat-icon class="art">brush</mat-icon>
-      <span>Art Gallery</span>
+      <mat-icon class="art">featured_play_list</mat-icon>
+      <span>Product Details</span>
     </button>
-    <button routerLink="/entertainment" routerLinkActive="active" mat-menu-item>
-      <mat-icon class="movie">live_tv</mat-icon>
-      <span>Movies & TV Shows</span>
-    </button>
+   
     <button routerLink="/gaming" routerLinkActive="active" mat-menu-item>
-      <mat-icon class="game">games</mat-icon>
-      <span>Gaming Zone</span>
+      <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+      <span>consumer Benefits</span>
     </button>
-    <button routerLink="/anime" routerLinkActive="active" mat-menu-item>
-      <mat-icon class="anime">face</mat-icon>
-      <span>Anime</span>
-    </button>
-    <button routerLink="/profile" routerLinkActive="active" mat-menu-item>
-      <mat-icon class="profile">account_box</mat-icon>
-      <span>Profile</span>
-    </button>
+   
   </mat-menu>
 
 
   <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
     <a mat-button style="margin:25px;" matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/'
-      routerLinkActive="active"><span class="headertitle">Nestlé Organex</span></a>
+      routerLinkActive="active"><span class="headertitle">Nestlé's Organex</span></a>
 
   </div>
   <div fxShow="true" fxHide.lt-md="true">
@@ -44,21 +34,12 @@
       <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
       this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'"
         mat-button style="transform: translateX(420px);" matTooltip="Go to art gallery home page"
-        [matTooltipPosition]="'right'" routerLink='/art' routerLinkActive="active"><span class="headertitle page">Art
-          Gallery</span></a>
-      <a *ngIf="this.currentUrl=='/entertainment'" mat-button style="transform: translateX(420px);"
-        matTooltip="Go to movies home page" [matTooltipPosition]="'right'" routerLink='/entertainment'
-        routerLinkActive="active"><span class="headertitle page">Movies & Shows</span></a>
-      <a *ngIf="this.currentUrl=='/anime'" mat-button style="transform: translateX(420px);"
-        matTooltip="Go to anime home page" [matTooltipPosition]="'right'" routerLink='/anime'
-        routerLinkActive="active"><span class="headertitle page">Anime Zone</span></a>
+        [matTooltipPosition]="'right'" routerLink='/art' routerLinkActive="active"><span class="headertitle page">Product Details</span></a>
+    
       <a *ngIf="this.currentUrl=='/gaming'" mat-button style="transform: translateX(420px);"
         matTooltip="Go to gaming home page" [matTooltipPosition]="'right'" routerLink='/gaming'
-        routerLinkActive="active"><span class="headertitle page">Gaming
-          Zone</span></a>
-      <a *ngIf="this.currentUrl=='/profile'" mat-button style="transform: translateX(420px);"
-        matTooltip="Go to profile home page" [matTooltipPosition]="'right'" routerLink='/profile'
-        routerLinkActive="active"><span class="headertitle page">Profile</span></a>
+        routerLinkActive="active"><span class="headertitle page">Consumer Benefits</span></a>
+    
 
     </div>
 
@@ -72,29 +53,20 @@
     </a>
     <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/art"
       routerLinkActive="active">
-      <mat-icon>brush</mat-icon>
+      <mat-icon>featured_play_list</mat-icon>
     </a>
-    <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/entertainment"
-      routerLinkActive="active">
-      <mat-icon>live_tv</mat-icon>
-    </a>
-    <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/anime"
-      routerLinkActive="active">
-      <mat-icon>face</mat-icon>
-    </a>
+    
+    
     <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/gaming"
       routerLinkActive="active">
-      <mat-icon>games</mat-icon>
+      <mat-icon>sentiment_satisfied_alt</mat-icon>
     </a>
-    <a mat-button matTooltip="Admin's profile" [matTooltipPosition]="'above'" routerLink="/profile"
-      routerLinkActive="active">
-      <mat-icon>account_box</mat-icon>
-    </a>
+   
   </div>
   <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl=='/'">
       <a mat-button style="transform: translateX(-91px);" matTooltip="App home page" [matTooltipPosition]="'right'"
-        routerLink='/' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">Nestlé Organex</span></a>
+        routerLink='/' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">Nestlé's Organex</span></a>
     </div>
   </div>
   <div fxShow="false" fxHide.lt-md="false">
@@ -103,21 +75,12 @@
       <a *ngIf="this.currentUrl=='/art' ||this.currentUrl=='/art/automobile' || this.currentUrl=='/art/caricatures' || 
       this.currentUrl=='/art/doodles'||this.currentUrl=='/art/portraits'||this.currentUrl=='/art/abstract'||this.currentUrl=='/art/posters'" mat-button style="transform: translateX(-91px);"
         matTooltip="Go to art gallery home page" [matTooltipPosition]="'right'" routerLink='/art'
-        routerLinkActive="active"><span class="mobile_header">Art
-          Gallery</span></a>
-      <a *ngIf="this.currentUrl=='/entertainment'" mat-button style="transform: translateX(-91px);"
-        matTooltip="Go to movies home page" [matTooltipPosition]="'right'" routerLink='/entertainment'
-        routerLinkActive="active"><span class="mobile_header">Movies & Shows</span></a>
-      <a *ngIf="this.currentUrl=='/anime'" mat-button style="transform: translateX(-91px);"
-        matTooltip="Go to anime home page" [matTooltipPosition]="'right'" routerLink='/anime'
-        routerLinkActive="active"><span class="mobile_header">Anime Zone</span></a>
+        routerLinkActive="active"><span class="mobile_header">Product Details</span></a>
+     
       <a *ngIf="this.currentUrl=='/gaming'" mat-button style="transform: translateX(-91px);"
         matTooltip="Go to gaming home page" [matTooltipPosition]="'right'" routerLink='/gaming'
-        routerLinkActive="active"><span class="mobile_header">Gaming
-          Zone</span></a>
-      <a *ngIf="this.currentUrl=='/profile'" mat-button style="transform: translateX(-91px);"
-        matTooltip="Go to profile home page" [matTooltipPosition]="'right'" routerLink='/profile'
-        routerLinkActive="active"><span class="mobile_header">Profile</span></a>
+        routerLinkActive="active"><span class="mobile_header">Consumer Benefits</span></a>
+     
 
     </div>
     <span class="home-spacer"></span>
@@ -125,10 +88,7 @@
 
   <div fxShow="false" fxHide.lt-md="false">
     <div *ngIf="this.currentUrl=='/'">
-      <a mat-button matTooltip="Admin's profile" [matTooltipPosition]="'above'" routerLink="/profile"
-        routerLinkActive="active">
-        <mat-icon>account_box</mat-icon>
-      </a>
+     
     </div>
     <div *ngIf="this.currentUrl!='/'">
       <a mat-button matTooltip="Go to app home page" [matTooltipPosition]="'above'" routerLink="/"

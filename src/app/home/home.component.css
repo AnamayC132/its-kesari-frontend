@@ -25,11 +25,28 @@
         color: rgb(0, 0, 0);
     }
 
- .custom-card{
+ .custom-card1{
   background-color: black;
   padding: 16px -1px;
  cursor: pointer;
  user-select: none;
+ 
+ 
+}
+.custom-card2{
+  background-color: black;
+  padding: 16px -1px;
+ cursor: pointer;
+ user-select: none;
+ opacity: 0;
+ 
+}
+.custom-card3{
+  background-color: black;
+  padding: 16px -1px;
+ cursor: pointer;
+ user-select: none;
+ opacity: 0.5;
  
 }
   .customIcon{
