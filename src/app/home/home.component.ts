@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     // this.pages.set("live_tv", "/entertainment");
     this.pages.set("baby", "/baby1");
     this.pages.set("b1", "/brand");
+    
     this.router.events.subscribe((event: Event) => {
 
       if (event instanceof NavigationEnd) {
