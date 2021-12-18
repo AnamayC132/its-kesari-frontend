@@ -10,6 +10,6 @@ export class LoginServiceService {
   constructor(private http:HttpClient) { }
 
   public login(user:User):Observable<any>{
-return this.http.post<any>("http://localhost:8080/login",user);
+return this.http.post<any>("http://192.168.0.104:8080/login",user);
   }
 }
