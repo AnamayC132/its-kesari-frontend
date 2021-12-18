@@ -13,10 +13,10 @@ export class HomeComponent implements OnInit {
   pages = new Map<string, string>();
   baseUrl:string="assets/home/";
   ngOnInit(): void {
-    this.pages.set("b", "/card1"); 
-    // this.pages.set("live_tv", "/entertainment");
-    this.pages.set("baby", "/baby1");
-    this.pages.set("b1", "/brand");
+    this.pages.set("b", "/erp"); 
+    this.pages.set("baby", "/scm");
+    this.pages.set("b1", "/crm");
+    this.pages.set("b2", "/kms");
     
     this.router.events.subscribe((event: Event) => {
 

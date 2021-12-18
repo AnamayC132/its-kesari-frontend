@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs'
 
+import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -34,6 +35,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatChipsModule} from '@angular/material/chips';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits.component';
+import { LoginComponent } from './login/login.component';
+import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
+import { RegistrationComponent } from './registration/registration.component';
+
 
 
 
@@ -45,6 +50,9 @@ import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    LoginComponent,
+    LoginsuccessComponent,
+    RegistrationComponent,
    
     
 
@@ -54,7 +62,9 @@ import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule ,
     MatCardModule,
+    MatInputModule,
     MatTabsModule,
     BrowserAnimationsModule,
     MatDialogModule,
