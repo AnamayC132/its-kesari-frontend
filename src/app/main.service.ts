@@ -10,7 +10,7 @@ export class MainService {
   constructor(private http:HttpClient) { }
 
   public register(user:User):Observable<any>{
-return this.http.post<any>("http://localhost:8080/register",user);
+return this.http.post<any>("https://its-backend.herokuapp.com/register",user);
   }
 }
 
