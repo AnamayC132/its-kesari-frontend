@@ -11,16 +11,16 @@ export class MainService {
   constructor(private http:HttpClient) { }
   
   public register(user:User):Observable<any>{
-return this.http.post<any>("http://localhost:8080/register",user);
+return this.http.post<any>("https://its-backend.herokuapp.com/register",user);
   }
   public payNow(orders:Orders):Observable<any>{
-    return this.http.post<any>("http://localhost:8080/placedOrderNow",orders);
+    return this.http.post<any>("https://its-backend.herokuapp.com/placedOrderNow",orders);
       }
   public getProducts():Observable<any>{
-    return this.http.get<any>("http://localhost:8080/getProducts");
+    return this.http.get<any>("https://its-backend.herokuapp.com/getProducts");
       }
       public getUserByEmail(email:String):Observable<any>{
-        return this.http.get<any>("http://localhost:8080/getUserByName/"+email);
+        return this.http.get<any>("https://its-backend.herokuapp.com/getUserByName/"+email);
           }
 }
 
