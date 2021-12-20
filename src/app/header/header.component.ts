@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,16 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() currentUrl;
-  pages = new Map<string, string>();
-  constructor() { }
-
-    
+ 
   
-  ngOnInit(): void {
-    this.pages.set( "/brand","Product Details:Go to product details page"); 
-    this.pages.set( "/baby1","Consumer Benefits:Go to consumer benefits page");
-    
+  constructor(private route: ActivatedRoute) { }
+  page:String
+
+  ngOnInit(): void {this.page=this.route.snapshot.paramMap.get('page')
   }
 
 

@@ -33,12 +33,22 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 ;
 import {MatChipsModule} from '@angular/material/chips';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits.component';
+import { ProductDetailsComponent } from './xyz2/product-details.component';
+import { ConsumerBenefitsComponent } from './xyz/consumer-benefits.component';
 import { LoginComponent } from './login/login.component';
-import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
-import { RegistrationComponent } from './registration/registration.component';
 
+import { RegistrationComponent } from './registration/registration.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { EcomComponent } from './ecom/ecom.component';
+import { ErpComponent } from './erp/erp.component';
+import { ScmComponent } from './scm/scm.component';
+import { KmsComponent } from './kms/kms.component';
+import { CrmComponent } from './crm/crm.component';
+
+
+import { EcomHeaderComponent } from './ecom-header/ecom-header.component';
+import { PaymentDialogueComponent } from './payment-dialogue/payment-dialogue.component';
 
 
 
@@ -51,8 +61,19 @@ import { RegistrationComponent } from './registration/registration.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    LoginsuccessComponent,
     RegistrationComponent,
+    WelcomeComponent,
+    EcomComponent,
+    ErpComponent,
+    ScmComponent,
+    KmsComponent,
+    CrmComponent,
+ 
+   
+    EcomHeaderComponent,
+ 
+   
+    PaymentDialogueComponent,
    
     
 
@@ -80,7 +101,8 @@ import { RegistrationComponent } from './registration/registration.component';
     MatRippleModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSnackBarModule
     
   ],
   providers: [

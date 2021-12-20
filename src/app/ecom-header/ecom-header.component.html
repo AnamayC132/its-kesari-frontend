@@ -1,0 +1,255 @@
+<mat-toolbar class="mat-elevation-z4">
+    <div class="rippleHover">
+      <button mat-icon-button matTooltip="Click to get Menu panel" [matTooltipPosition]="'above'"
+        [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <mat-menu #menu="matMenu">
+      <button routerLink="/" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="home">home</mat-icon>
+        <span>Home</span>
+      </button>
+      <!-- <button routerLink="/erp/erp" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="art">featured_play_list</mat-icon>
+        <span>ERP</span>
+      </button>
+     
+      <button routerLink="/crm/crm" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>CRM</span>
+      </button>
+      <button routerLink="/scm/scm" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>SCM</span>
+      </button>
+      <button routerLink="/kms/kms" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>KMS</span>
+      </button> -->
+     
+    </mat-menu>
+  
+  
+    <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
+      <a mat-button style="margin:25px;" matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/ecom'
+        routerLinkActive="active"><span class="headertitle">KESARI ONLINE STORE</span></a>
+  
+    </div>
+    <!-- <div fxShow="true" fxHide.lt-md="true">
+      <div class="rippleHover" *ngIf="this.page!='home'">
+  
+        <a *ngIf="this.page=='erp'"
+          mat-button style="transform: translateX(420px);" matTooltip="Go to ERP page"
+          [matTooltipPosition]="'right'" routerLink='/erp/erp' routerLinkActive="active"><span class="headertitle page">ERP</span></a>
+      
+        <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/scm/scm'
+          routerLinkActive="active"><span class="headertitle page">SCM</span></a>
+      
+          <a *ngIf="this.page=='crm'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/crm/crm'
+          routerLinkActive="active"><span class="headertitle page">CRM</span></a>
+          <a *ngIf="this.page=='kms'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/kms/kms'
+          routerLinkActive="active"><span class="headertitle page">KMS</span></a>
+      </div>
+  
+    </div> -->
+  
+    <span class="home-spacer"></span>
+    <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
+      <a mat-button matTooltip="Go to MIS home page" [matTooltipPosition]="'above'" routerLink="/"
+        routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+      </a>
+      <!-- <a mat-button matTooltip="Go to ERP page" [matTooltipPosition]="'above'" routerLink="/erp/erp"
+        routerLinkActive="active">
+        <mat-icon>featured_play_list</mat-icon>
+      </a>
+      
+      
+      <a mat-button matTooltip="Go to SCM page" [matTooltipPosition]="'above'" routerLink="/scm/scm"
+        routerLinkActive="active">
+        <mat-icon>sentiment_satisfied_alt</mat-icon>
+      </a>
+      <a mat-button matTooltip="Go to CRM page" [matTooltipPosition]="'above'" routerLink="/crm/crm"
+        routerLinkActive="active">
+        <mat-icon>sentiment_satisfied_alt</mat-icon>
+      </a>
+      <a mat-button matTooltip="Go to KMS page" [matTooltipPosition]="'above'" routerLink="/kms/kms"
+      routerLinkActive="active">
+      <mat-icon>sentiment_satisfied_alt</mat-icon>
+    </a> -->
+    </div>
+    <!-- <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page=='home'">
+        <a mat-button style="transform: translateX(-91px);" matTooltip="MIS home page" [matTooltipPosition]="'right'"
+          routerLink='/home/home' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">KESARI IT SYSTEMS</span></a>
+      </div>
+    </div>
+    <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page!='home'">
+  
+        <a *ngIf="this.page=='erp'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to ERP page" [matTooltipPosition]="'right'" routerLink='/erp/erp'
+          routerLinkActive="active"><span class="mobile_header">ERP</span></a>
+       
+        <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/scm/scm'
+          routerLinkActive="active"><span class="mobile_header">SCM</span></a>
+          <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to CRM page" [matTooltipPosition]="'right'" routerLink='/crm/crm'
+          routerLinkActive="active"><span class="mobile_header">CRM</span></a>
+          <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to KMS page" [matTooltipPosition]="'right'" routerLink='/kms/kms'
+          routerLinkActive="active"><span class="mobile_header">KMS</span></a>
+  
+      </div>
+      <span class="home-spacer"></span>
+    </div>
+  
+    <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page=='home'">
+       
+      </div>
+      <div *ngIf="this.page!='home'">
+        <a mat-button matTooltip="Go to MIS home page" [matTooltipPosition]="'above'" routerLink="/"
+          routerLinkActive="active">
+          <mat-icon>home</mat-icon>
+        </a>
+      </div>
+      </div>
+   -->
+    
+  
+  
+  </mat-toolbar>
+
+  <!-- ======================================================================================================================= -->
+  <!-- <mat-toolbar class="mat-elevation-z4">
+    <div class="rippleHover">
+      <button mat-icon-button matTooltip="Click to get Menu panel" [matTooltipPosition]="'above'"
+        [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <mat-menu #menu="matMenu">
+      <button routerLink="/" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="home">home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button routerLink="/erp/erp" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="art">featured_play_list</mat-icon>
+        <span>ERP</span>
+      </button>
+     
+      <button routerLink="/crm/crm" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>CRM</span>
+      </button>
+      <button routerLink="/scm/scm" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>SCM</span>
+      </button>
+      <button routerLink="/kms/kms" routerLinkActive="active" mat-menu-item>
+        <mat-icon class="game">sentiment_satisfied_alt</mat-icon>
+        <span>KMS</span>
+      </button>
+     
+    </mat-menu>
+  
+  
+    <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
+      <a mat-button style="margin:25px;" matTooltip="App home page" [matTooltipPosition]="'right'" routerLink='/ecom'
+        routerLinkActive="active"><span class="headertitle">KESARI ONLINE STORE</span></a>
+  
+    </div>
+    <div fxShow="true" fxHide.lt-md="true">
+      <div class="rippleHover" *ngIf="this.page!='home'">
+  
+        <a *ngIf="this.page=='erp'"
+          mat-button style="transform: translateX(420px);" matTooltip="Go to ERP page"
+          [matTooltipPosition]="'right'" routerLink='/erp/erp' routerLinkActive="active"><span class="headertitle page">ERP</span></a>
+      
+        <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/scm/scm'
+          routerLinkActive="active"><span class="headertitle page">SCM</span></a>
+      
+          <a *ngIf="this.page=='crm'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/crm/crm'
+          routerLinkActive="active"><span class="headertitle page">CRM</span></a>
+          <a *ngIf="this.page=='kms'" mat-button style="transform: translateX(420px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/kms/kms'
+          routerLinkActive="active"><span class="headertitle page">KMS</span></a>
+      </div>
+  
+    </div>
+  
+    <span class="home-spacer"></span>
+    <div class="rippleHover" fxShow="true" fxHide.lt-md="true">
+      <a mat-button matTooltip="Go to MIS home page" [matTooltipPosition]="'above'" routerLink="/"
+        routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+      </a>
+      <a mat-button matTooltip="Go to ERP page" [matTooltipPosition]="'above'" routerLink="/erp/erp"
+        routerLinkActive="active">
+        <mat-icon>featured_play_list</mat-icon>
+      </a>
+      
+      
+      <a mat-button matTooltip="Go to SCM page" [matTooltipPosition]="'above'" routerLink="/scm/scm"
+        routerLinkActive="active">
+        <mat-icon>sentiment_satisfied_alt</mat-icon>
+      </a>
+      <a mat-button matTooltip="Go to CRM page" [matTooltipPosition]="'above'" routerLink="/crm/crm"
+        routerLinkActive="active">
+        <mat-icon>sentiment_satisfied_alt</mat-icon>
+      </a>
+      <a mat-button matTooltip="Go to KMS page" [matTooltipPosition]="'above'" routerLink="/kms/kms"
+      routerLinkActive="active">
+      <mat-icon>sentiment_satisfied_alt</mat-icon>
+    </a>
+    </div>
+    <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page=='home'">
+        <a mat-button style="transform: translateX(-91px);" matTooltip="MIS home page" [matTooltipPosition]="'right'"
+          routerLink='/home/home' routerLinkActive="active"><span class="mobile_header" style="color: rgb(255, 255, 255);">KESARI IT SYSTEMS</span></a>
+      </div>
+    </div>
+    <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page!='home'">
+  
+        <a *ngIf="this.page=='erp'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to ERP page" [matTooltipPosition]="'right'" routerLink='/erp/erp'
+          routerLinkActive="active"><span class="mobile_header">ERP</span></a>
+       
+        <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to SCM page" [matTooltipPosition]="'right'" routerLink='/scm/scm'
+          routerLinkActive="active"><span class="mobile_header">SCM</span></a>
+          <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to CRM page" [matTooltipPosition]="'right'" routerLink='/crm/crm'
+          routerLinkActive="active"><span class="mobile_header">CRM</span></a>
+          <a *ngIf="this.page=='scm'" mat-button style="transform: translateX(-91px);"
+          matTooltip="Go to KMS page" [matTooltipPosition]="'right'" routerLink='/kms/kms'
+          routerLinkActive="active"><span class="mobile_header">KMS</span></a>
+  
+      </div>
+      <span class="home-spacer"></span>
+    </div>
+  
+    <div fxShow="false" fxHide.lt-md="false">
+      <div *ngIf="this.page=='home'">
+       
+      </div>
+      <div *ngIf="this.page!='home'">
+        <a mat-button matTooltip="Go to MIS home page" [matTooltipPosition]="'above'" routerLink="/"
+          routerLinkActive="active">
+          <mat-icon>home</mat-icon>
+        </a>
+      </div>
+  
+    </div>
+  
+  
+  </mat-toolbar> -->

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, Event, NavigationEnd } from '@angular/router';
+import { Router, Event, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,22 +8,17 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
-  currentUrl: any;
-  pages = new Map<string, string>();
-  baseUrl:string="assets/home/";
+  constructor(private router: Router,private route: ActivatedRoute) { }
+ page:String
+  public pages = new Map<string, string>();
+  public baseUrl:string="assets/home/";
   ngOnInit(): void {
-    this.pages.set("b", "/erp"); 
-    this.pages.set("baby", "/scm");
-    this.pages.set("b1", "/crm");
-    this.pages.set("b2", "/kms");
+    this.pages.set("erp", "/erp"); 
+    this.pages.set("scm", "/scm");
+    this.pages.set("crm", "/crm");
+    this.pages.set("kms", "/kms");
+    this.page=this.route.snapshot.paramMap.get('page');
     
-    this.router.events.subscribe((event: Event) => {
-
-      if (event instanceof NavigationEnd) {
-        this.currentUrl = event.url;
-      }
-    });
   }
 
 }

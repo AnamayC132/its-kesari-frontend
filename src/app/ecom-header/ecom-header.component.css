@@ -1,0 +1,70 @@
+.home-spacer {
+    flex: 1 1 auto;
+  }
+.mat-toolbar {
+    position: relative;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.979);
+    height: 82px;
+  }
+.mat-icon{
+    color: rgb(255, 255, 255);
+}
+.headertitle{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: fantasy;
+}
+.headertitle.page{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: fantasy;
+}
+.mat-icon-button {
+    width: 70px;
+    height: 80px;
+    margin-left: -13px;
+    transition: .5s ease;
+}
+.mobile_header{
+    transform: translateX(-68px);
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: fantasy;
+}
+.mat-button{
+    min-width: 60px;
+    line-height: 67px;
+    padding: 7px 0px;
+    margin-left: -8px;
+    transition: .5s ease;
+}
+.homeicon{
+    margin-left: -8px;
+}
+.home{
+    color:black;
+}
+.profile{
+    color:rgb(42, 143, 184)
+}
+.art{
+color: rgb(216, 53, 12);
+}
+.game{
+    color: rgb(15, 12, 216);
+}
+.movie{
+    color: rgb(12, 216, 63);
+}
+.anime{
+    color: rgb(216, 12, 124);
+}
+.rippleHover:hover .mat-button{
+   
+    transform: scale(1.2);
+  }
+  .rippleHover:hover .mat-icon-button{
+   
+    transform: scale(1.2);
+  }

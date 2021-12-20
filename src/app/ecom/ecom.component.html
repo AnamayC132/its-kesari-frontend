@@ -1,0 +1,113 @@
+
+
+<div class="container">
+    <app-ecom-header></app-ecom-header>
+    <div class="content">
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label="Product Catalogue"> 
+          <div fxLayout="row wrap" >
+          <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let prod of products">
+            <div style="transform: scale3d(0.8,0.8,0.8);">
+            <mat-card   class=" custom-card1 mat-elevation-z4" >
+              <mat-card-title>{{prod.pname}}</mat-card-title>
+              <div class="rippleHover">
+              <img mat-card-image src="{{this.baseUrl+prod.pname}}.jpg">
+            </div>
+          
+            <mat-card-actions>
+              <button class="custom-button" mat-button>Qty: {{prod.quantity}}</button>
+              <button class="custom-button" mat-button>Price: {{prod.price}}</button>
+              <button class="custom-button" (click)="addToCart(prod)" mat-button>Add to Cart</button>
+            </mat-card-actions>
+            </mat-card>
+           
+          </div>
+          </div>
+        </div> 
+      </mat-tab>
+        <mat-tab label="Cart"> 
+          <div fxLayout="row wrap" >
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let cart of carts">
+              <div style="transform: scale3d(0.8,0.8,0.8);">
+              <mat-card   class=" custom-card1 mat-elevation-z4" >
+                <mat-card-title>{{cart.pname}}</mat-card-title>
+                <div class="rippleHover">
+                <img mat-card-image src="{{this.baseUrl+cart.pname}}.jpg">
+              </div>
+            
+              <mat-card-actions>
+                <button class="custom-button" mat-button>Price: {{cart.price}}</button>
+                <button class="custom-button" (click)="remove(cart)" mat-button>Remove</button>
+              </mat-card-actions>
+            </mat-card>
+           
+          </div>
+          </div>
+        </div> 
+        </mat-tab>
+        <mat-tab label="Payment"> 
+          <div  fxLayout="row wrap" >
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%">
+              <div style="transform: scale3d(0.8,0.8,0.8);">
+                <mat-card>
+                  <mat-card-title>Enter the payment details</mat-card-title>
+              <mat-card-content>
+              <form  #payForm="ngForm" (ngSubmit)="pay()">
+               
+                <p>
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="Email" name="email" [(ngModel)]="user1.email" required>
+                    
+                  </mat-form-field>
+                </p>
+                
+                <p>
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="City" name="city" [(ngModel)]="address.city" required>
+                    
+                  </mat-form-field>
+                </p>
+                <p>
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="State" name="state" [(ngModel)]="address.state" required>
+                    
+                  </mat-form-field>
+                </p>
+                <p>
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="Pincode" name="pincode" [(ngModel)]="address.pincode" required>
+                    
+                  </mat-form-field>
+                </p>
+                <p>
+                 
+                    <select>
+                      <option value="" disabled>Choose your payment gateway</option>
+                      <option >GooglePay</option>
+                      <option >PhonePay</option>
+                   </select>
+                    
+                </p>
+               
+              
+                <div class="button">
+                  <button type="submit" (click)="openDialog()" mat-button>Pay Now</button>
+                </div>
+                <div class="button">
+                  <a routerLink="/ecom"><button mat-button>Cancel</button></a>
+                </div>
+              
+              </form>
+              </mat-card-content>
+              </mat-card>
+           
+          </div>
+        </div>
+        </div>
+       </mat-tab>
+      </mat-tab-group>
+     
+    </div>
+  
+    <app-footer></app-footer>
+  </div>

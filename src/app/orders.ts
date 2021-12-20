@@ -1,15 +1,13 @@
 import { Address } from "./address";
 import { Product } from "./product";
 
-export class User {
-
-    userId: String;
-	uname:String;
+export class Orders {
+  
+	oname:String;
     email:String;
-	utype:String;
-	password:String;
+    products: Product[]
+    address:Address
     constructor(){
         
     }
-   
 }

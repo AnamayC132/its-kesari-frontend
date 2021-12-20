@@ -1,25 +1,47 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ConsumerBenefitsComponent } from './consumer-benefits/consumer-benefits.component';
+import { ProductDetailsComponent } from './xyz2/product-details.component';
+import { ConsumerBenefitsComponent } from './xyz/consumer-benefits.component';
 import {LoginComponent} from './login/login.component'
-import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
+
 import { RegistrationComponent } from './registration/registration.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { HomeComponent } from './home/home.component';
+import { EcomComponent } from './ecom/ecom.component';
+import { ScmComponent } from './scm/scm.component';
+import { ErpComponent } from './erp/erp.component';
+import { KmsComponent } from './kms/kms.component';
+import { CrmComponent } from './crm/crm.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
+  
   {
-    path: 'brand', component: ProductDetailsComponent
+    path: 'erp/:page', component: ErpComponent
+  },
+  {
+    path: 'kms/:page', component: KmsComponent
+  },
+  {
+    path: 'crm/:page', component: CrmComponent
+  },
+  {
+    path: '', component: WelcomeComponent
+  },
+  
+  { path: 'scm/:page', component: ScmComponent 
+  },
+  {
+    path: 'login/:utype', component: LoginComponent
+  },
+  {
+    path: 'ecom', component: EcomComponent
+  },
+  {
+    path: 'home/:page', component: HomeComponent
   },
  
-  { path: 'baby1', component: ConsumerBenefitsComponent },
-  {
-    path: '', component: LoginComponent
-  },
-  {
-    path: 'loginsuccess/:uname', component: LoginsuccessComponent
-  },
   {
     path: 'register', component: RegistrationComponent
   }

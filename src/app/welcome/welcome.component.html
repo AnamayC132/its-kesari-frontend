@@ -1,0 +1,25 @@
+<mat-drawer-container class="home-container" autosize>
+    <mat-drawer #drawer class="home-sidenav" mode="side">
+      
+     
+        <mat-card  class="custom-card2 mat-elevation-z4" [routerLink]="['/login','admin']"  routerLinkActive="active" >
+            <div class="rippleHover">
+             <img mat-card-image src="assets/home/admin.jpg">
+           </div>
+         </mat-card>
+         <mat-card class="custom-card2 mat-elevation-z4" [routerLink]="['/login','customer']" routerLinkActive="active" >
+            <div class="rippleHover">
+             <img mat-card-image src="assets/home/customer.jpg">
+           </div>
+         </mat-card>
+    
+    </mat-drawer>
+  
+    <div class="home-sidenav-content">
+        <img mat-card-image src="assets/home/banaras.jpg" (click)="drawer.toggle()">
+        
+    
+    </div>
+  
+  </mat-drawer-container>
+<router-outlet></router-outlet>
