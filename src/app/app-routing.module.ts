@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProductDetailsComponent } from './xyz2/product-details.component';
-import { ConsumerBenefitsComponent } from './xyz/consumer-benefits.component';
 import {LoginComponent} from './login/login.component'
 
 import { RegistrationComponent } from './registration/registration.component';

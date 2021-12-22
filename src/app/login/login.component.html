@@ -26,7 +26,8 @@
   <div class="button">
     Are you a new user?<a routerLink="/register"><button mat-button>Register</button></a>
   </div>
-
+  <mat-progress-spinner mode="indeterminate" *ngIf="isWait">
+  </mat-progress-spinner>
 </form>
 </mat-card-content>
 </mat-card>

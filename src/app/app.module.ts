@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
@@ -33,8 +33,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 ;
 import {MatChipsModule} from '@angular/material/chips';
-import { ProductDetailsComponent } from './xyz2/product-details.component';
-import { ConsumerBenefitsComponent } from './xyz/consumer-benefits.component';
 import { LoginComponent } from './login/login.component';
 
 import { RegistrationComponent } from './registration/registration.component';
@@ -55,8 +53,6 @@ import { PaymentDialogueComponent } from './payment-dialogue/payment-dialogue.co
 @NgModule({
   declarations: [
     AppComponent,
-    ProductDetailsComponent,
-    ConsumerBenefitsComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
@@ -92,6 +88,7 @@ import { PaymentDialogueComponent } from './payment-dialogue/payment-dialogue.co
     MatGridListModule,
     MatToolbarModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     MatButtonModule,
     MatSidenavModule,
     FlexLayoutModule,

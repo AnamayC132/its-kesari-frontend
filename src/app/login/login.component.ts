@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit{
   constructor(private service: LoginServiceService, private route:Router,private _snackBar: MatSnackBar,private activatedRoute: ActivatedRoute){
 
   }
+  isWait:Boolean=false;
   url:String;
   param:String
   utype:String;
@@ -37,7 +38,7 @@ export class LoginComponent implements OnInit{
   hide = true;
  msg:String;
   login(){
-   
+   this.isWait=true;
 this.service.login(this.user).subscribe(
   data =>{this.user=data, this._snackBar.open('Welcome', this.user.uname.toString(), {
     horizontalPosition: this.horizontalPosition,
@@ -45,8 +46,10 @@ this.service.login(this.user).subscribe(
     duration: 5 * 1000,
   });
   if(this.utype=="admin"){
+    this.isWait=false;
   this.route.navigate([this.url,this.param]);
   }else if(this.utype=="customer"){
+    this.isWait=false;
     this.route.navigate([this.url]);
   }
 }
